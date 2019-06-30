@@ -30,6 +30,7 @@
 		<cargo.context>${project.artifactId}</cargo.context>
 
 		<!-- Plugin versions -->
+                <build-helper-maven-plugin>3.0.0</build-helper-maven-plugin>
 		<cargo-maven2-plugin.version>1.4.4</cargo-maven2-plugin.version>
 		<jetty-maven-plugin.version>9.0.6.v20130930</jetty-maven-plugin.version>
 		<liquibase-maven-plugin.version>3.0.5</liquibase-maven-plugin.version>
@@ -275,6 +276,11 @@
 					<artifactId>maven-war-plugin</artifactId>
 					<version>${maven-war-plugin.version}</version>
 				</plugin>
+                                <plugin>
+                                    <groupId>org.codehaus.mojo</groupId>
+                                    <artifactId>build-helper-maven-plugin</artifactId>
+                                    <version>${build-helper-maven-plugin}</version>
+                                </plugin>
 				<plugin>
 					<groupId>org.codehaus.cargo</groupId>
 					<artifactId>cargo-maven2-plugin</artifactId>
